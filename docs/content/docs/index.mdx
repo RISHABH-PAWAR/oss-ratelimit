@@ -1,0 +1,31 @@
+---
+title: Introduction 
+description: Get a high-level overview of oss-ratelimit,key features (inspired by Upstash, enhanced flexibility), and why you should use it for rate limiting in Node.js & Next.js.
+---
+
+import { Card, Cards } from 'fumadocs-ui/components/card';
+import { Accordion, Accordions } from 'fumadocs-ui/components/accordion';
+import { Callout } from 'fumadocs-ui/components/callout';
+import { File, Folder, Files } from 'fumadocs-ui/components/files';
+import { TypeTable } from 'fumadocs-ui/components/type-table';
+import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
+import { Step, Steps } from 'fumadocs-ui/components/steps';
+
+`oss-ratelimit` is a feature-rich rate limiting library designed for performance and ease of use, heavily inspired by `@upstash/ratelimit`. It provides multiple algorithms, efficient Redis integration, fallback mechanisms, and a powerful registry system for managing multiple limiter configurations.
+
+**Key Features:**
+
+*   **Multiple Algorithms:** Fixed Window, Sliding Window, and Token Bucket.
+*   **Redis Backend:** Leverages Redis for distributed, high-performance state management.
+*   **Client Registry:** Efficiently manage multiple rate limiter instances and share Redis connections.
+*   **Ephemeral Cache:** Optional in-memory fallback during Redis outages (currently for Sliding Window).
+*   **Fail Open/Closed:** Configurable behavior during Redis failures.
+*   **Analytics:** Optional tracking of request counts and throughput.
+*   **TypeScript First:** Strongly typed for better developer experience.
+*   **Next.js Ready:** Includes utilities and patterns for seamless integration (IP detection, middleware).
+*   **Customizable:** Flexible configuration options for fine-tuning.
+
+<Cards>
+  <Card title="GitHub Repository" href="https://github.com/codersaadi/oss-ratelimit" />
+  <Card title="npm Package" href="https://www.npmjs.com/package/oss-ratelimit" />
+</Cards>
